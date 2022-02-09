@@ -2,13 +2,13 @@
 import os
 import csv
 
-csvpath=os.path.join('..','Resources','election_data.csv')
+csvpath=os.path.join('Resources','election_data.csv')
 with open(csvpath, newline='') as csvfile:
     csvreader = csv.reader(csvfile, delimiter=',')
    
 
 #read the header row first
-csv_header = next(csvreader)
+    csv_header = next(csvreader) 
     votes = []
     county = []
     candidates = []
@@ -68,14 +68,14 @@ csv_header = next(csvreader)
 
         #Print Statements
 
-print(f"Election Results") + "\n"
-print(f"-----------------------------------") + "\n"
-print(f"Total Votes: {total_votes}" + "\n"
-print(f"-----------------------------------") + "\n"
-print(f"Khan: {khan_percent}% ({khan_votes})") + "\n"
-print(f"Correy: {correy_percent}% ({correy_votes})") + "\n"
-print(f"Li: {li_percent}% ({li_votes})") + "\n"
-print(f"O'Tooley: {otooley_percent}% ({otooley_votes})") + "\n"
-print(f"-----------------------------------") + "\n"
-print(f"Winner: {winner}") + "\n"
+print(f"Election Results") 
+print(f"-----------------------------------") 
+print(f"Total Votes: {total_votes}" )
+print(f"-----------------------------------") 
+print(f"Khan: {khan_percent}% ({khan_votes})") 
+print(f"Correy: {correy_percent}% ({correy_votes})") 
+print(f"Li: {li_percent}% ({li_votes})") 
+print(f"O'Tooley: {otooley_percent}% ({otooley_votes})")
+print(f"-----------------------------------") 
+print(f"Winner: {winner}") 
 print(f"-----------------------------------")

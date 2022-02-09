@@ -4,9 +4,9 @@ import os
 import csv
 
 #set path for file
-csvpath = os.path.join('..', 'Resources', 'budget_data.csv')
+csvpath = os.path.join( 'Resources', 'budget_data.csv')
 
-with open("budget_data.csv", newline="") as csvfile:
+with open( csvpath, newline="") as csvfile:
     csvreader = csv.reader(csvfile, delimiter=",")
 
 #read the header row first
